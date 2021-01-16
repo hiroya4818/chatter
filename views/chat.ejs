@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chatter app</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <img src="/images/icon.png">
+        <p class="day"><%= day%></p>
+        <ul>
+          <a href="/">top</a>
+          <a href="/chat">つぶやく</a>
+          <a href="/contents">一覧</a>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="top chat">
+        <div class="push">
+            <form method="post" action="/chat">
+                <h5>つぶやく内容を入力してください！</h5>
+                <input class="tex" type="text" name="itemName"><br>
+                <p>※投稿内容は40文字以内でお願いします</p><br>
+                <input  class="submit" type="submit" value="投稿">
+            </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="info">　
+        <h3>個人情報</h3>
+        <ul>
+          <li>名前     : 福田 拡也</li>
+          <li>所属大学 : 大阪大学</li>
+          <li>使用言語  :HTML&CSS,JavaScript,SQL</li>
+          <li>連絡先   : osaka481859@gmail.co.jp</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
