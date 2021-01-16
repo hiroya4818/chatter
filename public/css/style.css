@@ -1,0 +1,240 @@
+/*共通*/
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+h1,h2,p,a{
+    color: white;
+}
+
+/*ボタン*/
+.btn {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4CCFC9;
+    height: 54px;
+    padding: 0 90px;
+    border-radius: 27px;
+    margin-top: 60px;
+    box-shadow: teal 0px 10px;
+    
+
+}
+.btn:active{
+    position: relative;
+    top: 10px;
+    box-shadow: none;
+}
+
+/*メニューバー*/
+.menu{
+    width:100%;
+    margin: auto;
+    background-color:black;
+    height:80px;
+    position: fixed;
+    opacity: 0.8;
+    
+}
+.menu img{
+    float:left;
+    height:70px;
+    padding-top: 8px;
+    padding-left: 40px;
+}
+.day{
+    float: left;
+    line-height: 80px;
+    padding-left: 20px;
+}
+.menu ul{
+    margin:0px 20px;
+    
+}
+.menu a{
+    float:right;
+    display: inline-block;
+    height: 80px;
+    width:100px;
+    text-align: center;
+    margin:0px 10px;
+    line-height: 80px;
+    transition:background-color  0.5s;
+}
+.menu a:hover{
+    background-color: rgba(255, 255, 255,0.5);
+    
+}
+
+/*インフォメーション*/
+.info{
+    width: 100%;
+    height: 190px;
+    padding: 40px 20px;
+    background-color: rgba(55, 52, 58,0.9);
+    
+}
+.info h3{
+    float: left;
+    padding-left: 70px;
+    color: white;
+    font-size: 25px;
+}
+.info ul{
+    float: right;
+    padding-right: 90px;
+    color: white;
+
+}
+.info li{
+    padding-bottom: 7px;
+    list-style: none;
+}
+
+
+/*top.ejs*/
+
+.top {
+    background-color: royalblue;
+    width:100%;
+    height: 800px;
+    
+}
+.wrapper{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.wrapper h2{
+    padding-top: 150px;
+    font-family: "arial black";
+    font-size: 30px;
+}
+.wrapper h1{
+    font-size:200px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px 0px 30px 0px;
+}
+.wrapper p{
+    padding:20px 0px;
+    font-weight: bold;
+}
+.wrapper img{
+    width: 500px;
+}
+
+
+
+
+
+/*contents.ejs*/
+
+
+.page{
+    min-height: 800px;
+    height: auto;
+    padding-top:120px; 
+    padding-bottom: 200px;
+}
+.page h1{
+    font-size: 30px;
+    padding:20px 0px;
+    text-align: center;
+}
+.memo{
+    width:80%;
+    background-color: whitesmoke;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.memo span{
+    display: inline-block;
+    padding:10px 0px;
+    text-align: center;
+    border: black solid 2px ;
+    text-align: center;
+    margin:0px;
+    float: left;
+    
+}
+.clear{
+    clear: left;
+}
+.date{
+    width:20%;
+    margin: 0px;
+}
+.con{
+    width:65%;
+}
+.good{
+    width:15%;
+}
+.goodmark{
+    height: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+.goodmark:hover{
+    opacity: 0.5;
+}
+.second{
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 100px;
+}
+.samples{
+    background-color: slategrey;
+}
+.sample{
+    color: white;
+    font-weight: bold;
+}
+
+/*chat.ejs*/
+.push{
+    width:80%;
+    margin: auto;
+    padding-top: 80px;
+    background-color:rgba(255, 255, 255, 0.9)
+}
+.submit{
+    display: inline-block;
+    align-items: center;
+    font-size: 18px;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+   font-weight: bold;
+   transition: hover 0.3s;
+}
+.submit:hover{
+    background-color:rgba(255, 255, 255, 0.9)
+}
+.tex{
+    padding: 10px 20px;
+    width: 70%;
+}
+form{
+    text-align: center;
+}
+form h5{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+form p{
+    color: black;
+    padding-top: 10px;
+}
+
+.chat{
+    padding-top:150px; 
+    padding-bottom: 150px;
+}
+
