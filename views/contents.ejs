@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chatter app</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <img src="/images/icon.png">
+        <p class="day"><%= day%></p>
+        <ul>
+          <a href="/">top</a>
+          <a href="/chat">つぶやく</a>
+          <a href="/contents">一覧</a>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="top page">
+        <h1>つぶやき一覧</h1>
+        <div class="memo">
+          <div class="samples">
+            <span class="date sample">日付</span>
+            <span class="con sample">メモ内容</span>
+            <span class="good sample">GOOD数</span><br>
+            <div class="clear"></div>
+          </div>
+          <% for(let i =(items.length-1);i >= 0;i--){%>
+            <span class="date"><%= items[i].day%></span>
+            <span class="con"><%= items[i].content %></span>
+            <span class="good"><%= items[i].good%>
+                <a href="/count/<%= items[i].id%>"><img class="goodmark" src="/images/good.png"></a>
+            </span><br>
+            <div class="clear"></div>
+          <% }%>
+        </div>
+        <a class="btn second" href="/chat">つぶやく</a>
+        
+      </div>
+    </main>
+    <footer>
+      <div class="info">
+        <h3>個人情報</h3>
+        <ul>
+          <li>名前     : 福田 拡也</li>
+          <li>所属大学 : 大阪大学</li>
+          <li>使用言語  :HTML&CSS,JavaScript,SQL</li>
+          <li>連絡先   : osaka481859@gmail.co.jp</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
