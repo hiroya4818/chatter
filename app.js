@@ -6,10 +6,10 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.urlencoded({extended: false}));
 //データベース
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'Osakadai4818',
-  database: 'chatter'
+  host: 'us-cdbr-east-03.cleardb.com',
+  user: 'bfd87068f6ebf3',
+  password: 'd96e429e',
+  database: 'heroku_a1803fb03d5bc70'
 });
 connection.connect((err) => {
   if (err) {
@@ -47,7 +47,7 @@ app.post("/chat",(req,res)=>{
 //字数制限によって場合分け
   if(0<req.body.itemName.length && req.body.itemName.length<41){
     connection.query(
-      'INSERT INTO memo (day,content,good) VALUES (?,?,0)',
+      'INSERT INTO memo (id,day,content,good) VALUES (0,?,?,0)',
       [day,req.body.itemName],
       (error, results) => {
         res.redirect('/contents');
