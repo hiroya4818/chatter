@@ -47,7 +47,7 @@ app.post("/chat",(req,res)=>{
 //字数制限によって場合分け
   if(0<req.body.itemName.length && req.body.itemName.length<41){
     connection.query(
-      'INSERT INTO memo (id,day,content,good) VALUES (0,?,?,0)',
+      'INSERT INTO memo (day,content,good) VALUES (?,?,0)',
       [day,req.body.itemName],
       (error, results) => {
         res.redirect('/contents');
